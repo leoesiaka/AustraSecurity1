@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#061f38" name="theme-color"/>
+<meta content="Contact Austra Security Limited about manned guarding, construction site security, event security and other security requirements. Offices in London and Coventry; enquiries welcome from across the UK." name="description"/>
+<title>Contact Austra Security Limited | Security Enquiries Across the UK</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root{--navy:#061f38;--navy-2:#092b49;--navy-3:#103c60;--gold:#efb64b;--gold-2:#ffd37b;--ink:#102d46;--body:#43596b;--muted:#718497;--mist:#f1f6f9;--pale:#e7f0f5;--white:#fff;--line:#dbe5eb;--shadow:0 22px 60px rgba(5,31,55,.12);--radius:18px;--content:1200px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;scroll-padding-top:92px}
+    body{font-family:'DM Sans',Arial,sans-serif;color:var(--body);background:#fff;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+    h1,h2,h3,h4{font-family:Manrope,'DM Sans',sans-serif;line-height:1.15;letter-spacing:-.035em;color:var(--ink)}
+    p{margin:0 0 14px}.container{width:min(var(--content),calc(100% - 48px));margin-inline:auto}.section{padding:86px 0}.section--soft{background:var(--mist)}
+    .eyebrow{display:flex;align-items:center;gap:10px;color:#31546e;text-transform:uppercase;letter-spacing:.14em;font-size:11px;font-weight:800;margin-bottom:12px}.eyebrow:before{content:"";width:28px;height:2px;background:var(--gold);display:block;flex:none}
+    .section-head{max-width:760px;margin:0 auto 40px;text-align:center}.section-head .eyebrow{justify-content:center}.section-head h2{font-size:clamp(29px,3.4vw,43px);margin-bottom:13px}.section-head p{max-width:690px;margin:0 auto;color:var(--body)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:13px 23px;border:1px solid transparent;border-radius:999px;background:var(--gold);color:var(--navy);font-size:13px;font-weight:800;line-height:1.2;transition:transform .25s ease,box-shadow .25s ease,background .25s ease}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(239,182,75,.25);background:var(--gold-2)}.btn--outline{color:#fff;background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.55)}.btn--outline:hover{background:#fff;color:var(--navy);box-shadow:none}.btn--navy{background:var(--navy);color:#fff}.btn--navy:hover{background:var(--navy-3)}
+    .icon{width:19px;height:19px;display:block;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+    .skip-link{position:absolute;top:-60px;left:16px;background:#fff;color:var(--navy);padding:10px 14px;z-index:200;border-radius:8px}.skip-link:focus{top:12px} :focus-visible{outline:3px solid #e8aa2b;outline-offset:3px}
+    /* Header and navigation */
+    .site-header{position:absolute;top:0;left:0;right:0;z-index:50;color:#fff;border-bottom:1px solid rgba(255,255,255,.12);transition:background .25s ease,box-shadow .25s ease}
+    .site-header.is-scrolled{position:fixed;background:rgba(5,29,52,.97);box-shadow:0 8px 28px rgba(0,0,0,.16);backdrop-filter:blur(14px)}
+    .nav-wrap{min-height:76px;display:flex;align-items:center;gap:20px}.brand{display:inline-flex;align-items:center;gap:10px;flex:none;margin-right:auto;color:#fff}.brand__mark{width:38px;height:42px;color:var(--gold)}.brand__name{display:block;font-family:Manrope,sans-serif;font-size:19px;line-height:1;font-weight:800;letter-spacing:.13em}.brand__sub{display:block;color:#f8d58c;font-size:8px;line-height:1.5;letter-spacing:.25em;text-transform:uppercase;margin-top:5px}
+    .main-nav{display:flex;align-items:center;gap:3px}.main-nav>a{font-size:12px;font-weight:700;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.9);transition:color .2s,background .2s}.main-nav>a:hover,.main-nav>a[aria-current="page"]{color:var(--gold-2);background:rgba(255,255,255,.08)}
+    .nav-phone{display:inline-flex;align-items:center;gap:8px;color:#fff;font-size:12px;font-weight:700;white-space:nowrap}.nav-phone .icon{color:var(--gold);width:16px;height:16px}.nav-cta{min-height:41px;padding:11px 17px;font-size:11px}.menu-toggle,.menu-close{display:none}
+    .menu-backdrop{display:none}.nav-panel-head,.nav-panel-foot{display:none}
+    /* Career hero */
+    .career-hero{position:relative;isolation:isolate;display:flex;align-items:center;min-height:min(760px,100svh);overflow:hidden;background:var(--navy);color:#fff;padding:145px 0 94px}
+    .career-hero__image{position:absolute;inset:0;z-index:-3;width:100%;height:100%;object-fit:cover;object-position:center 44%;opacity:.76}
+    .career-hero:before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(3,22,40,.97) 0%,rgba(4,29,51,.9) 43%,rgba(4,29,51,.54) 75%,rgba(4,29,51,.34) 100%),linear-gradient(0deg,rgba(3,22,40,.65),transparent 58%)}
+    .career-hero:after{content:"";position:absolute;z-index:-1;right:-100px;top:12%;width:430px;height:430px;border:1px solid rgba(239,182,75,.25);border-radius:50%;box-shadow:0 0 0 36px rgba(239,182,75,.035),0 0 0 76px rgba(239,182,75,.025)}
+    .career-hero__grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.62fr);align-items:end;gap:65px}
+    .breadcrumb{display:flex;align-items:center;gap:10px;margin-bottom:27px;color:rgba(255,255,255,.7);font-size:11px;font-weight:600;letter-spacing:.04em}.breadcrumb a{color:#fff}.breadcrumb .icon{width:13px;height:13px;color:var(--gold)}
+    .career-hero .eyebrow{color:#f7d58f}.career-hero h1{max-width:790px;margin:0 0 22px;color:#fff;font-size:clamp(43px,6.2vw,76px);font-weight:800;line-height:1.04;letter-spacing:-.055em}.career-hero h1 span{display:block;color:var(--gold-2)}
+    .hero-lead{max-width:660px;color:rgba(255,255,255,.83);font-size:16px;line-height:1.85;margin:0 0 29px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-card{padding:27px;border:1px solid rgba(255,255,255,.19);border-radius:18px;background:rgba(7,34,58,.74);backdrop-filter:blur(13px);box-shadow:0 22px 70px rgba(0,0,0,.2)}
+    .hero-card__top{display:flex;align-items:center;justify-content:space-between;padding-bottom:19px;border-bottom:1px solid rgba(255,255,255,.14);margin-bottom:18px}.hero-card__top span{font-size:10px;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.16em;font-weight:800}.hero-card__mark{width:43px;height:47px}
+    .hero-card h2{font:800 24px/1.2 Manrope,sans-serif;margin:0 0 10px;color:#fff}.hero-card p{font-size:12px;line-height:1.8;color:rgba(255,255,255,.76);margin:0 0 18px}.hero-points{display:grid;gap:12px;padding-top:17px;border-top:1px solid rgba(255,255,255,.14)}.hero-points>div{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.88);font-size:11px;font-weight:600}.point-check{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:rgba(239,182,75,.15);color:var(--gold-2);flex:none}.point-check .icon{width:13px;height:13px;stroke-width:2.5}
+    /* Intro facts */
+    .facts{position:relative;z-index:2;margin-top:-1px;background:#fff;border-bottom:1px solid var(--line)}.facts__inner{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-top:0;border-radius:0 0 15px 15px;overflow:hidden;box-shadow:0 14px 32px rgba(5,31,55,.055)}.fact{display:flex;align-items:center;gap:14px;padding:22px 25px;border-right:1px solid var(--line)}.fact:last-child{border-right:0}.fact__icon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--mist);color:var(--navy);flex:none}.fact__icon .icon{width:20px;height:20px}.fact strong{display:block;font-family:Manrope,sans-serif;color:var(--ink);font-size:13px}.fact span:last-child{display:block;color:var(--muted);font-size:11px;line-height:1.5;margin-top:3px}
+    /* Intro and benefits */
+    .intro-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}.intro-panel{position:relative;min-height:390px;border-radius:18px;overflow:hidden;background:var(--navy)}.intro-panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.82}.intro-panel:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(4,26,46,.82),transparent 70%)}.intro-panel__caption{position:absolute;z-index:1;left:26px;right:26px;bottom:25px;color:#fff}.intro-panel__caption strong{display:block;font:800 22px/1.2 Manrope,sans-serif;margin-bottom:6px}.intro-panel__caption span{font-size:12px;color:rgba(255,255,255,.78)}.intro-copy h2{font-size:clamp(29px,3.2vw,41px);margin:0 0 18px}.intro-copy p{font-size:14px;line-height:1.9}.intro-copy .eyebrow{margin-bottom:13px}
+    .benefit-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:15px}.benefit-card{padding:24px 19px;border:1px solid #e0e8ed;border-radius:15px;background:#fff;box-shadow:0 10px 28px rgba(5,31,55,.045);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}.benefit-card:hover{transform:translateY(-4px);border-color:#d8bd82;box-shadow:0 17px 34px rgba(5,31,55,.09)}.benefit-card__icon{display:grid;place-items:center;width:42px;height:42px;margin-bottom:19px;border-radius:12px;background:#fff5e1;color:#9b6c15}.benefit-card__icon .icon{width:20px;height:20px}.benefit-card h3{font-size:15px;margin-bottom:9px}.benefit-card p{font-size:11px;line-height:1.75;color:var(--body);margin:0}
+    /* Role cards */
+    .roles-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.role-card{position:relative;display:flex;flex-direction:column;min-height:100%;padding:28px;border:1px solid #dfe7ec;border-radius:17px;background:#fff;box-shadow:0 12px 32px rgba(5,31,55,.055);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}.role-card:hover{transform:translateY(-4px);border-color:#d8bd82;box-shadow:0 20px 42px rgba(5,31,55,.1)}.role-card__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:21px}.role-card__icon{display:grid;place-items:center;width:48px;height:48px;border-radius:13px;background:var(--navy);color:var(--gold-2)}.role-card__icon .icon{width:23px;height:23px}.role-card__label{padding:6px 9px;border-radius:999px;background:#fff5e1;color:#805910;font-size:9px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}.role-card h3{font-size:20px;margin-bottom:11px}.role-card p{font-size:12px;line-height:1.8}.role-card__location{display:flex;align-items:flex-start;gap:8px;margin-top:auto;padding-top:18px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}.role-card__location .icon{width:15px;height:15px;color:#a87518;margin-top:1px}
+    .vacancy-note{display:flex;gap:13px;align-items:flex-start;margin-top:23px;padding:17px 19px;border:1px solid #ead8ad;border-radius:12px;background:#fffaf0;color:#73561d;font-size:12px;line-height:1.7}.vacancy-note .icon{width:19px;height:19px;flex:none;margin-top:1px}
+    /* Candidate profile and licensing */
+    .candidate-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:start}.candidate-copy h2{font-size:clamp(29px,3.2vw,40px);margin-bottom:15px}.candidate-copy>p{font-size:13px;line-height:1.85}.candidate-list{display:grid;grid-template-columns:1fr 1fr;gap:13px 18px;margin-top:25px}.candidate-list li{list-style:none;display:flex;align-items:flex-start;gap:10px;color:var(--ink);font-size:12px;font-weight:600;line-height:1.55}.candidate-list .icon{width:17px;height:17px;color:#a87518;margin-top:1px}
+    .licence-card{padding:28px;border:1px solid rgba(239,182,75,.38);border-radius:17px;background:linear-gradient(145deg,#092b49,#061a2e);color:#fff;box-shadow:0 20px 45px rgba(5,31,55,.15)}.licence-card__icon{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;background:rgba(239,182,75,.14);color:var(--gold-2);margin-bottom:19px}.licence-card__icon .icon{width:23px;height:23px}.licence-card h3{font-size:21px;color:#fff;margin-bottom:12px}.licence-card p{font-size:12px;line-height:1.85;color:rgba(255,255,255,.78);margin:0}.licence-card__note{display:block;margin-top:17px;padding-top:16px;border-top:1px solid rgba(255,255,255,.16);font-size:10px;line-height:1.7;color:#f5d99e}
+    /* Application steps */
+    .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:steps}.step-card{position:relative;padding:25px 24px;border:1px solid var(--line);border-radius:15px;background:#fff}.step-card:before{counter-increment:steps;content:"0" counter(steps);display:block;margin-bottom:18px;color:#c18a27;font:800 12px Manrope,sans-serif;letter-spacing:.12em}.step-card h3{font-size:16px;margin-bottom:8px}.step-card p{font-size:12px;line-height:1.75;margin:0}
+    .application-band{position:relative;overflow:hidden;padding:72px 0;background:var(--navy);color:#fff}.application-band:before{content:"";position:absolute;right:-110px;top:-170px;width:430px;height:430px;border:1px solid rgba(239,182,75,.22);border-radius:50%;box-shadow:0 0 0 35px rgba(239,182,75,.035),0 0 0 75px rgba(239,182,75,.025)}.application-band__inner{position:relative;display:flex;align-items:center;justify-content:space-between;gap:35px}.application-band .eyebrow{color:#f5d99e}.application-band h2{max-width:720px;color:#fff;font-size:clamp(28px,3.5vw,43px);margin-bottom:12px}.application-band p{max-width:690px;color:rgba(255,255,255,.76);font-size:13px;line-height:1.8;margin:0}.application-band__actions{display:flex;flex-direction:column;align-items:flex-start;gap:10px;flex:none}.application-band__actions small{font-size:10px;color:rgba(255,255,255,.65)}
+    /* Footer */
+    .site-footer{position:relative;overflow:hidden;padding:68px 0 22px;background:#041a2e;color:#d5e0e8}.footer-grid{display:grid;grid-template-columns:1.45fr 1fr 1fr 1fr;gap:42px;padding-bottom:43px}.footer-brand .brand{margin:0 0 17px}.footer-brand>p{max-width:300px;color:#aebfcb;font-size:12px;line-height:1.8}.footer-contact{display:grid;gap:11px;margin-top:20px}.footer-contact a,.footer-contact span{display:flex;align-items:flex-start;gap:9px;color:#d2dee7;font-size:11px;line-height:1.6}.footer-contact .icon{width:15px;height:15px;color:var(--gold);margin-top:1px}.footer-col h3{margin:5px 0 17px;color:#fff;font:800 12px Manrope,sans-serif;letter-spacing:.04em}.footer-col>a{display:block;margin:0 0 10px;color:#aebfcb;font-size:11px;transition:color .2s}.footer-col>a:hover,.footer-legal a:hover{color:var(--gold-2)}.footer-bottom{display:flex;justify-content:space-between;gap:18px;align-items:center;padding-top:19px;border-top:1px solid rgba(255,255,255,.12);color:#91a5b5;font-size:10px}.footer-legal{display:flex;gap:16px}.footer-ghost{position:absolute;right:3%;bottom:32px;color:rgba(255,255,255,.025);font:800 clamp(60px,11vw,150px)/.8 Manrope,sans-serif;letter-spacing:.1em;pointer-events:none}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.is-visible{opacity:1;transform:none}
+    /* Right-side mobile menu */
+    @media(max-width:980px){.main-nav>a{padding:10px 8px;font-size:11px}.nav-phone{display:none}.benefit-grid{grid-template-columns:repeat(3,1fr)}.footer-grid{grid-template-columns:1.3fr 1fr 1fr;gap:30px}.footer-col:last-child{grid-column:2/4}}
+    @media(max-width:780px){.site-header{z-index:120}.nav-wrap{min-height:70px}.nav-cta{display:none}.menu-toggle{position:relative;z-index:121;display:grid;place-items:center;width:44px;height:44px;border:1px solid rgba(255,255,255,.28);border-radius:11px;background:rgba(255,255,255,.08);color:#fff}.menu-toggle .icon{width:22px;height:22px}.main-nav{position:fixed;top:0;right:0;bottom:0;left:auto;width:min(88vw,380px);max-width:100%;height:100vh;height:100dvh;display:flex;flex-direction:column;align-items:stretch;gap:8px;padding:24px 24px 30px;overflow-y:auto;background:linear-gradient(155deg,#092b49 0%,#041a2e 100%);border:0;border-left:1px solid rgba(255,255,255,.13);border-radius:0;box-shadow:-22px 0 55px rgba(0,0,0,.32);z-index:122;transform:translateX(105%);visibility:hidden;pointer-events:none;transition:transform .35s cubic-bezier(.2,.75,.25,1),visibility .35s}.main-nav.is-open{transform:translateX(0);visibility:visible;pointer-events:auto}.nav-panel-head{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:0 0 22px;margin-bottom:12px;border-bottom:1px solid rgba(255,255,255,.16)}.nav-panel-head .brand{margin:0}.nav-panel-head .brand__mark{width:36px;height:40px}.nav-panel-head .brand__name{font-size:17px}.menu-close{display:grid;place-items:center;flex:none;width:42px;height:42px;border:1px solid rgba(255,255,255,.25);border-radius:10px;background:rgba(255,255,255,.07);color:#fff}.menu-close .icon{width:20px;height:20px}.main-nav>a:not(.btn){display:flex;align-items:center;min-height:48px;padding:12px 14px;border-radius:9px;color:#f4f7fa;font-size:14px;font-weight:700;background:transparent}.main-nav>a:not(.btn):hover,.main-nav>a[aria-current="page"]{color:var(--gold);background:rgba(255,255,255,.08)}.nav-panel-foot{display:grid;gap:15px;margin-top:auto;padding-top:22px;border-top:1px solid rgba(255,255,255,.16)}.nav-panel-foot .nav-phone{display:flex;align-items:center;gap:9px;color:#fff;font-size:13px}.nav-panel-foot .nav-phone .icon{color:var(--gold)}.nav-panel-foot .btn{width:100%;min-height:48px}.menu-backdrop{display:block;position:fixed;inset:0;z-index:110;border:0;border-radius:0;background:rgba(1,12,23,.67);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .3s ease,visibility .3s ease}.menu-backdrop.is-open{opacity:1;visibility:visible;pointer-events:auto}body.menu-open{overflow:hidden}.career-hero{min-height:unset;padding:130px 0 75px}.career-hero__grid{grid-template-columns:1fr;gap:32px}.hero-card{max-width:520px}.intro-grid,.candidate-grid{grid-template-columns:1fr;gap:35px}.intro-panel{min-height:330px;order:-1}.benefit-grid{grid-template-columns:repeat(2,1fr)}.roles-grid{grid-template-columns:1fr 1fr}.application-band__inner{align-items:flex-start;flex-direction:column}.application-band__actions{flex-direction:row;align-items:center;flex-wrap:wrap}}
+    @media(max-width:560px){.container{width:min(var(--content),calc(100% - 36px))}.section{padding:66px 0}.career-hero{padding:118px 0 65px}.career-hero h1{font-size:41px}.hero-lead{font-size:14px}.breadcrumb{margin-bottom:21px}.hero-card{padding:21px}.facts__inner{grid-template-columns:1fr}.fact{border-right:0;border-bottom:1px solid var(--line);padding:16px 19px}.fact:last-child{border-bottom:0}.intro-panel{min-height:285px}.benefit-grid,.roles-grid,.steps-grid,.candidate-list{grid-template-columns:1fr}.benefit-card{padding:22px}.role-card{padding:23px}.candidate-grid{gap:30px}.licence-card{padding:23px}.application-band{padding:58px 0}.application-band__inner{gap:24px}.application-band__actions{align-items:stretch;flex-direction:column;width:100%}.application-band__actions .btn{width:100%}.footer-grid{grid-template-columns:1fr 1fr;gap:28px 20px}.footer-brand{grid-column:1/-1}.footer-col:last-child{grid-column:auto}.footer-bottom{align-items:flex-start;flex-direction:column}.footer-legal{flex-wrap:wrap}.footer-ghost{font-size:70px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.benefit-card,.role-card,.btn{transition:none}}
+  
+
+/* Contact page */
+.contact-hero{position:relative;isolation:isolate;display:flex;align-items:center;min-height:min(720px,95svh);overflow:hidden;background:var(--navy);color:#fff;padding:140px 0 85px}
+.contact-hero__image{position:absolute;inset:0;z-index:-3;width:100%;height:100%;object-fit:cover;object-position:center 45%;opacity:.72}
+.contact-hero:before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(3,22,40,.97) 0%,rgba(4,29,51,.9) 46%,rgba(4,29,51,.52) 78%,rgba(4,29,51,.35) 100%),linear-gradient(0deg,rgba(3,22,40,.65),transparent 58%)}
+.contact-hero:after{content:"";position:absolute;z-index:-1;right:-120px;top:8%;width:440px;height:440px;border:1px solid rgba(239,182,75,.23);border-radius:50%;box-shadow:0 0 0 36px rgba(239,182,75,.035),0 0 0 76px rgba(239,182,75,.025)}
+.contact-hero__grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(290px,.68fr);align-items:center;gap:60px}
+.breadcrumb{display:flex;align-items:center;gap:10px;margin-bottom:27px;color:rgba(255,255,255,.7);font-size:11px;font-weight:600;letter-spacing:.04em}.breadcrumb a{color:#fff}.breadcrumb .icon{width:13px;height:13px;color:var(--gold)}
+.contact-hero .eyebrow{color:#f7d58f}.contact-hero h1{max-width:790px;margin:0 0 22px;color:#fff;font-size:clamp(43px,6vw,73px);font-weight:800;line-height:1.04;letter-spacing:-.055em}.contact-hero h1 span{display:block;color:var(--gold-2)}
+.contact-hero__lead{max-width:650px;color:rgba(255,255,255,.83);font-size:15px;line-height:1.85;margin:0 0 29px}.contact-hero__actions{display:flex;gap:12px;flex-wrap:wrap}
+.contact-hero-card{padding:26px;border:1px solid rgba(255,255,255,.19);border-radius:18px;background:rgba(7,34,58,.76);backdrop-filter:blur(13px);box-shadow:0 22px 70px rgba(0,0,0,.2)}.contact-hero-card__top{display:flex;align-items:center;justify-content:space-between;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.14);margin-bottom:18px}.contact-hero-card__top span{font-size:10px;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.16em;font-weight:800}.contact-hero-card__mark{width:43px;height:47px}.contact-hero-card h2{font:800 24px/1.2 Manrope,sans-serif;margin:0 0 9px;color:#fff}.contact-hero-card>p{font-size:12px;line-height:1.8;color:rgba(255,255,255,.76);margin:0 0 18px}
+.contact-quick-link{display:flex;align-items:center;gap:12px;padding:13px 0;border-top:1px solid rgba(255,255,255,.13);color:#fff}.contact-quick-link__icon{display:grid;place-items:center;width:38px;height:38px;flex:none;border-radius:11px;background:rgba(239,182,75,.14);color:var(--gold-2)}.contact-quick-link__icon .icon{width:18px;height:18px}.contact-quick-link small{display:block;color:rgba(255,255,255,.64);font-size:9px;margin-bottom:2px}.contact-quick-link strong{display:block;font:700 13px Manrope,sans-serif;overflow-wrap:anywhere}.contact-quick-link__arrow{margin-left:auto;width:16px;height:16px;color:var(--gold-2)}
+.contact-facts{position:relative;z-index:2;background:#fff}.contact-facts__inner{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-top:0;border-radius:0 0 15px 15px;overflow:hidden;box-shadow:0 14px 32px rgba(5,31,55,.055)}.contact-fact{display:flex;align-items:center;gap:14px;padding:21px 24px;border-right:1px solid var(--line)}.contact-fact:last-child{border-right:0}.contact-fact__icon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--mist);color:var(--navy);flex:none}.contact-fact__icon .icon{width:20px;height:20px}.contact-fact strong{display:block;font:800 13px Manrope,sans-serif;color:var(--ink)}.contact-fact a,.contact-fact span:last-child{display:block;margin-top:3px;color:var(--muted);font-size:11px;line-height:1.5}.contact-fact a:hover{color:#9b6c15}
+.contact-main-section{padding-top:88px;padding-bottom:92px}.contact-main-grid{display:grid;grid-template-columns:minmax(0,.87fr) minmax(0,1.13fr);gap:58px;align-items:start}.contact-section-heading{margin-bottom:25px}.contact-section-heading h2{font-size:clamp(30px,3.4vw,43px);margin:0 0 13px}.contact-section-heading p{font-size:13px;line-height:1.8;margin:0}.contact-detail-card{display:flex;gap:15px;align-items:center;padding:17px 18px;margin-bottom:11px;border:1px solid var(--line);border-radius:13px;background:#fff;box-shadow:0 8px 22px rgba(5,31,55,.035)}.contact-detail-card__icon{display:grid;place-items:center;width:43px;height:43px;flex:none;border-radius:12px;background:#fff5e1;color:#936719}.contact-detail-card__icon .icon{width:20px;height:20px}.contact-detail-card small{display:block;color:var(--muted);font-size:10px;margin-bottom:2px}.contact-detail-card h3{font:800 14px Manrope,sans-serif;margin:0 0 3px}.contact-detail-card a{font-size:12px;font-weight:700;color:#9b6c15;overflow-wrap:anywhere}.contact-office-block{margin-top:28px}.contact-office-block__heading{margin-bottom:15px}.contact-office-block__heading .eyebrow{margin-bottom:8px}.contact-office-block__heading h3{font:800 19px/1.3 Manrope,sans-serif;margin-bottom:7px}.contact-office-block__heading p{font-size:11px;line-height:1.75;margin:0}.contact-office-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.contact-office-card{padding:17px;border:1px solid var(--line);border-radius:12px;background:var(--mist)}.contact-office-card__icon{display:grid;place-items:center;width:34px;height:34px;margin-bottom:10px;border-radius:10px;background:#fff;color:var(--navy)}.contact-office-card__icon .icon{width:17px;height:17px}.contact-office-card small{display:block;color:#987026;font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}.contact-office-card h4{font:800 15px Manrope,sans-serif;margin-bottom:4px}.contact-office-card p,.contact-office-card address{font-size:10px;line-height:1.65;color:var(--body);font-style:normal;margin:0}.contact-response-note{display:flex;gap:11px;align-items:flex-start;margin-top:18px;padding:15px;border-left:3px solid var(--gold);border-radius:0 10px 10px 0;background:#fff9eb}.contact-response-note .icon{width:18px;height:18px;flex:none;margin-top:2px;color:#9b6c15}.contact-response-note p{font-size:10px;line-height:1.7;color:#705a31;margin:0}
+.contact-form-panel{padding:34px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 18px 48px rgba(5,31,55,.09)}.contact-form-heading{margin-bottom:25px}.contact-form-heading .eyebrow{margin-bottom:9px}.contact-form-heading h2{font-size:clamp(27px,3vw,36px);margin:0 0 9px}.contact-form-heading p{font-size:12px;line-height:1.7;margin:0}.enquiry-form{display:grid;gap:17px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.form-field{display:grid;gap:7px;min-width:0}.form-field label{font-size:11px;font-weight:800;color:var(--ink)}.form-field label>span,.consent-check span span{color:#b57d18}.form-field label small{font-weight:500;color:var(--muted)}.form-field input,.form-field select,.form-field textarea{width:100%;border:1px solid #d7e1e8;border-radius:9px;padding:12px 13px;min-height:46px;background:#fbfcfd;color:var(--ink);font:500 12px 'DM Sans',sans-serif;outline:none;transition:border-color .2s,box-shadow .2s}.form-field textarea{resize:vertical;min-height:126px;line-height:1.6}.form-field input::placeholder,.form-field textarea::placeholder{color:#9aa9b4}.form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:#ba8c38;box-shadow:0 0 0 3px rgba(239,182,75,.16)}.field-hint{font-size:10px;line-height:1.5;color:var(--muted)}.consent-check{display:flex;align-items:flex-start;gap:10px;font-size:10px;line-height:1.6;color:var(--body)}.consent-check input{width:15px;height:15px;flex:none;margin-top:2px;accent-color:var(--navy)}.contact-submit{width:100%;border:0}.form-disclaimer{font-size:10px;line-height:1.65;color:var(--muted);margin:0;text-align:center}.form-disclaimer.is-error{color:#a33c2d}.form-disclaimer.is-success{color:#456f42}
+.contact-service-band{padding-top:80px;padding-bottom:82px}.contact-service-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.contact-service-list>a{display:flex;align-items:center;gap:12px;padding:16px;border:1px solid #e0e8ed;border-radius:11px;background:#fff;color:var(--ink);font-size:11px;font-weight:800;transition:transform .2s,border-color .2s,box-shadow .2s}.contact-service-list>a:hover{transform:translateY(-3px);border-color:#d3b16c;box-shadow:0 12px 25px rgba(5,31,55,.07)}.contact-service-list__icon{display:grid;place-items:center;width:36px;height:36px;flex:none;border-radius:10px;background:#f4f7f8;color:#9a7025}.contact-service-list__icon .icon{width:18px;height:18px}.contact-service-list>a>span:nth-child(2){flex:1}.contact-service-list>a>.icon{width:15px;height:15px;color:#a87518}
+.contact-bottom-cta{position:relative;overflow:hidden;padding:66px 0;background:var(--navy);color:#fff}.contact-bottom-cta:after{content:"";position:absolute;right:-120px;top:-190px;width:420px;height:420px;border:1px solid rgba(239,182,75,.22);border-radius:50%;box-shadow:0 0 0 35px rgba(239,182,75,.035),0 0 0 75px rgba(239,182,75,.025)}.contact-bottom-cta__inner{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:35px}.contact-bottom-cta .eyebrow{color:#f5d99e}.contact-bottom-cta h2{max-width:670px;color:#fff;font:800 clamp(27px,3.4vw,40px)/1.15 Manrope,sans-serif;margin:0 0 9px}.contact-bottom-cta p{color:#c4d2dc;font-size:12px;line-height:1.7;margin:0}
+@media(max-width:1050px){.contact-hero__grid{gap:38px}.contact-main-grid{gap:32px}.contact-form-panel{padding:27px}.contact-service-list{grid-template-columns:1fr 1fr}}
+@media(max-width:780px){.contact-hero{min-height:unset;padding:128px 0 70px}.contact-hero__grid{grid-template-columns:1fr;gap:30px}.contact-hero-card{max-width:510px}.contact-facts__inner{grid-template-columns:1fr}.contact-fact{border-right:0;border-bottom:1px solid var(--line);padding:16px 19px}.contact-fact:last-child{border-bottom:0}.contact-main-grid{grid-template-columns:1fr;gap:35px}.contact-details-column{order:2}.contact-form-panel{order:1}.contact-service-list{grid-template-columns:1fr 1fr}.contact-bottom-cta__inner{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.contact-hero{padding:117px 0 60px}.contact-hero h1{font-size:41px}.contact-hero__lead{font-size:13px}.contact-hero-card{padding:21px}.contact-main-section{padding-top:62px;padding-bottom:65px}.contact-form-panel{padding:22px 18px}.form-row{grid-template-columns:1fr;gap:16px}.contact-office-grid{grid-template-columns:1fr 1fr}.contact-service-list{grid-template-columns:1fr}.contact-bottom-cta{padding:57px 0}.contact-bottom-cta__inner>.btn{width:100%}}
+@media(prefers-reduced-motion:reduce){.contact-service-list>a{transition:none}}
+
+</style>
+<style id="austra-logo-image-styles">
+/* Austra Security Limited: use the supplied full logo image in the header and footer. */
+.brand__logo {
+  display: block;
+  width: 154px;
+  height: auto;
+  max-height: 66px;
+  object-fit: contain;
+  object-position: left center;
+}
+.footer-brand .brand__logo {
+  width: 176px;
+  max-height: 76px;
+}
+.site-header .brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  flex: 0 0 auto;
+  min-width: 0;
+}
+.site-header .brand__logo {
+  display: block;
+  width: 154px;
+  height: auto;
+  max-height: 66px;
+  object-fit: contain;
+  object-position: left center;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .18));
+}
+.site-header .nav-panel-head .brand__logo {
+  width: 150px;
+  max-height: 62px;
+}
+@media (max-width: 760px) {
+  .site-header .brand__logo {
+    width: 142px;
+    max-height: 58px;
+  }
+}
+</style></head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<svg aria-hidden="true" height="0" style="position:absolute;overflow:hidden" width="0"><defs>
+<symbol id="i-shield" viewbox="0 0 24 24"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"></path><path d="m9 12 2 2 4-4"></path></symbol>
+<symbol id="i-users" viewbox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path></symbol>
+<symbol id="i-eye" viewbox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"></path><circle cx="12" cy="12" r="3"></circle></symbol>
+<symbol id="i-pin" viewbox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></symbol>
+<symbol id="i-building" viewbox="0 0 24 24"><rect height="18" rx="1" width="12" x="3" y="3"></rect><path d="M15 9h6v12h-6M7 7h4M7 11h4M7 15h4M7 19h4M18 13h0M18 17h0"></path></symbol>
+<symbol id="i-arrow" viewbox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"></path></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-10 6L2 7"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-hardhat" viewbox="0 0 24 24"><path d="M2 19h20M4 19v-3a8 8 0 0 1 16 0v3M12 3v5M5 9l2 2M19 9l-2 2"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></symbol>
+<symbol id="i-briefcase" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="7"></rect><path d="M8 7V4h8v3M3 12h18M10 12v2h4v-2"></path></symbol>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></symbol>
+<symbol id="i-star" viewbox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"></path></symbol>
+<symbol id="i-menu" viewbox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"></path></symbol>
+<symbol id="i-close" viewbox="0 0 24 24"><path d="m18 6-12 12M6 6l12 12"></path></symbol>
+<symbol id="i-badge" viewbox="0 0 24 24"><circle cx="12" cy="8" r="6"></circle><path d="m8.2 13-1 9 4.8-3 4.8 3-1-9M9.5 8l1.7 1.7L14.8 6"></path></symbol>
+<symbol id="i-message" viewbox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8Z"></path></symbol>
+<symbol id="i-info" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 11v5M12 7h.01"></path></symbol></defs></svg>
+<header class="site-header" id="siteHeader">
+<div class="container nav-wrap">
+<a aria-label="Austra Security Limited home" class="brand" href="index.html"><img alt="Austra Security Limited logo" class="brand__logo" decoding="async" src="logo.png"/></a>
+<nav aria-label="Main navigation" class="main-nav" id="mainNav">
+<div class="nav-panel-head">
+<a aria-label="Austra Security Limited home" class="brand" href="index.html"><img alt="Austra Security Limited logo" class="brand__logo" decoding="async" src="logo.png"/></a>
+<button aria-label="Close navigation menu" class="menu-close" id="menuClose" type="button"><svg class="icon"><use href="#i-close"></use></svg></button>
+</div>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="service.html">Our Services</a>
+<a href="careers.html">Careers</a>
+<a aria-current="page" href="contact.html">Contact</a>
+<div class="nav-panel-foot">
+<a class="nav-phone" href="tel:+447867842357"><svg class="icon"><use href="#i-phone"></use></svg><span>+44 7867 842357</span></a>
+<a class="btn" href="#contact-form">Contact Austra <svg class="icon"><use href="#i-arrow"></use></svg></a>
+</div>
+</nav>
+<a class="nav-phone" href="tel:+447867842357"><svg class="icon"><use href="#i-phone"></use></svg><span>+44 7867 842357</span></a>
+<a class="btn nav-cta" href="#contact-form">Contact Austra <svg class="icon"><use href="#i-arrow"></use></svg></a>
+<button aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation menu" class="menu-toggle" id="menuToggle" type="button"><svg class="icon"><use href="#i-menu"></use></svg></button>
+</div>
+</header>
+<button aria-label="Close navigation menu" class="menu-backdrop" id="menuBackdrop" tabindex="-1" type="button"></button>
+<main id="main"><section aria-labelledby="contact-title" class="contact-hero">
+<img alt="Austra security officers outside a modern commercial building" class="contact-hero__image" fetchpriority="high" src="assets/security-team.jpg"/>
+<div class="container contact-hero__grid">
+<div class="contact-hero__copy">
+<nav aria-label="Breadcrumb" class="breadcrumb"><a href="index.html">Home</a><svg aria-hidden="true" class="icon"><use href="#i-arrow"></use></svg><span>Contact</span></nav>
+<span class="eyebrow">Get in Touch · Austra Security Limited</span>
+<h1 id="contact-title">Let's talk about <span>your security needs.</span></h1>
+<p class="contact-hero__lead">Whether you need security for a business, commercial premises, construction site, residential property or event, we're ready to understand your requirements and discuss the next step.</p>
+<div class="contact-hero__actions"><a class="btn" href="#contact-form">Send an Enquiry <svg aria-hidden="true" class="icon"><use href="#i-arrow"></use></svg></a><a class="btn btn--outline" href="tel:+447867842357">Call +44 7867 842357</a></div>
+</div>
+<aside aria-label="Contact Austra Security directly" class="contact-hero-card">
+<div class="contact-hero-card__top"><span>We're here to help</span><svg aria-hidden="true" class="contact-hero-card__mark" viewbox="0 0 48 54"><path d="M24 2 44 9v15c0 12-8 22-20 28C12 46 4 36 4 24V9Z" fill="#082e4b" stroke="#efb64b" stroke-width="2.5"></path><path d="M24 9 36 14v10c0 8-5 15-12 20Z" fill="#efb64b"></path><path d="M24 10.5V43" fill="none" stroke="#efb64b" stroke-linecap="round" stroke-width="1.35"></path></svg></div>
+<h2>Speak with Austra Security.</h2>
+<p>Tell us what you need, where the site is located and how we can help.</p>
+<a class="contact-quick-link" href="tel:+447867842357"><span class="contact-quick-link__icon"><svg class="icon"><use href="#i-phone"></use></svg></span><span><small>Call our team</small><strong>+44 7867 842357</strong></span><svg class="icon contact-quick-link__arrow"><use href="#i-arrow"></use></svg></a>
+<a class="contact-quick-link" href="mailto:info@austrasecurity.co.uk"><span class="contact-quick-link__icon"><svg class="icon"><use href="#i-mail"></use></svg></span><span><small>Email us</small><strong>info@austrasecurity.co.uk</strong></span><svg class="icon contact-quick-link__arrow"><use href="#i-arrow"></use></svg></a>
+</aside>
+</div>
+</section>
+<div aria-label="Austra Security contact details" class="contact-facts">
+<div class="container"><div class="contact-facts__inner">
+<div class="contact-fact"><span class="contact-fact__icon"><svg class="icon"><use href="#i-phone"></use></svg></span><div><strong>Telephone</strong><a href="tel:+447867842357">+44 7867 842357</a></div></div>
+<div class="contact-fact"><span class="contact-fact__icon"><svg class="icon"><use href="#i-mail"></use></svg></span><div><strong>Email</strong><a href="mailto:info@austrasecurity.co.uk">info@austrasecurity.co.uk</a></div></div>
+<div class="contact-fact"><span class="contact-fact__icon"><svg class="icon"><use href="#i-pin"></use></svg></span><div><strong>Office locations</strong><span>London &amp; Coventry, United Kingdom</span></div></div>
+</div></div>
+</div>
+<section aria-labelledby="contact-form-title" class="section contact-main-section" id="contact-form">
+<div class="container contact-main-grid">
+<div class="contact-details-column">
+<div class="contact-section-heading reveal"><span class="eyebrow">Contact Our Team</span><h2>How can we help?</h2><p>Share a few details about your security requirements. We'll use the information to understand your enquiry and the service you are interested in.</p></div>
+<div class="contact-detail-card reveal">
+<span class="contact-detail-card__icon"><svg class="icon"><use href="#i-phone"></use></svg></span><div><small>Call us</small><h3>Speak to our team</h3><a href="tel:+447867842357">+44 7867 842357</a></div>
+</div>
+<div class="contact-detail-card reveal">
+<span class="contact-detail-card__icon"><svg class="icon"><use href="#i-mail"></use></svg></span><div><small>Email us</small><h3>Send an email</h3><a href="mailto:info@austrasecurity.co.uk">info@austrasecurity.co.uk</a></div>
+</div>
+<div class="contact-office-block reveal">
+<div class="contact-office-block__heading"><span class="eyebrow">Our Locations</span><h3>Offices in London and Coventry.</h3><p>We are based in London and Coventry, with enquiries welcome regarding potential assignments in other parts of the United Kingdom, subject to operational availability.</p></div>
+<div class="contact-office-grid">
+<article class="contact-office-card"><span class="contact-office-card__icon"><svg class="icon"><use href="#i-building"></use></svg></span><small>Office location</small><h4>London</h4><p>128 City Road, London, EC1V 2NX</p></article>
+<article class="contact-office-card"><span class="contact-office-card__icon"><svg class="icon"><use href="#i-building"></use></svg></span><small>Office location</small><h4>Coventry</h4><address>261 Burnaby Road,<br/>Coventry<br/>CV6 4AU<br/>United Kingdom</address></article>
+</div>
+</div>
+<div class="contact-response-note reveal"><svg class="icon"><use href="#i-info"></use></svg><p>Not sure which service is right for you? Briefly describe your premises, event or project and we'll help you identify the next steps.</p></div>
+</div>
+<div class="contact-form-panel reveal">
+<div class="contact-form-heading"><span class="eyebrow">Send an Enquiry</span><h2 id="contact-form-title">Tell us what you need.</h2><p>Complete the form and continue in your email app to send your enquiry.</p></div>
+<form class="enquiry-form" id="enquiryForm">
+<div class="form-row">
+<div class="form-field"><label for="fullName">Full Name <span>*</span></label><input autocomplete="name" id="fullName" name="fullName" placeholder="Enter your full name" required="" type="text"/></div>
+<div class="form-field"><label for="email">Email Address <span>*</span></label><input autocomplete="email" id="email" name="email" placeholder="you@example.com" required="" type="email"/></div>
+</div>
+<div class="form-row">
+<div class="form-field"><label for="phone">Telephone Number <small>(optional)</small></label><input autocomplete="tel" id="phone" name="phone" placeholder="Enter your contact number" type="tel"/></div>
+<div class="form-field"><label for="service">Service Required <span>*</span></label><select id="service" name="service" required=""><option disabled="" selected="" value="">Select a service</option><option>Manned Guarding</option><option>Construction Site Security</option><option>Event Security</option><option>Residential Security</option><option>Corporate and Commercial Security</option><option>Mobile Patrols and Site Checks</option><option>Not Sure / General Enquiry</option></select></div>
+</div>
+<div class="form-field"><label for="location">Preferred Location <span>*</span></label><input autocomplete="address-level2" id="location" name="location" placeholder="Town, city or postcode anywhere in the UK" required="" type="text"/><small class="field-hint">Our offices are in London and Coventry. You can enquire about other UK locations too.</small></div>
+<div class="form-field"><label for="message">How Can We Help? <span>*</span></label><textarea id="message" name="message" placeholder="Tell us about your security requirements..." required="" rows="5"></textarea></div>
+<label class="consent-check"><input id="privacyConsent" required="" type="checkbox"/><span>I understand this form prepares an email draft in my email app. It does not send the enquiry automatically. <span>*</span></span></label>
+<button class="btn contact-submit" type="submit">Prepare Email Enquiry <svg class="icon"><use href="#i-arrow"></use></svg></button>
+<p class="form-disclaimer" id="formStatus" role="status">This form opens a pre-filled message in your email app. It does not send or store your information on this website.</p>
+</form>
+</div>
+</div>
+</section>
+<section aria-labelledby="contact-services-title" class="section section--soft contact-service-band">
+<div class="container">
+<div class="section-head reveal"><span class="eyebrow">Our Services</span><h2 id="contact-services-title">Security support for different environments.</h2><p>We welcome enquiries from businesses, organisations, property managers and event organisers.</p></div>
+<div class="contact-service-list">
+<a href="service.html#manned-guarding"><span class="contact-service-list__icon"><svg class="icon"><use href="#i-shield"></use></svg></span><span>Manned Guarding</span><svg class="icon"><use href="#i-arrow"></use></svg></a>
+<a href="service.html#construction-site-security"><span class="contact-service-list__icon"><svg class="icon"><use href="#i-hardhat"></use></svg></span><span>Construction Site Security</span><svg class="icon"><use href="#i-arrow"></use></svg></a>
+<a href="service.html#event-security"><span class="contact-service-list__icon"><svg class="icon"><use href="#i-calendar"></use></svg></span><span>Event Security</span><svg class="icon"><use href="#i-arrow"></use></svg></a>
+<a href="service.html#residential-security"><span class="contact-service-list__icon"><svg class="icon"><use href="#i-building"></use></svg></span><span>Residential Security</span><svg class="icon"><use href="#i-arrow"></use></svg></a>
+<a href="service.html#corporate-commercial-security"><span class="contact-service-list__icon"><svg class="icon"><use href="#i-briefcase"></use></svg></span><span>Corporate &amp; Commercial Security</span><svg class="icon"><use href="#i-arrow"></use></svg></a>
+<a href="service.html#mobile-patrols"><span class="contact-service-list__icon"><svg class="icon"><use href="#i-eye"></use></svg></span><span>Mobile Patrols &amp; Site Checks</span><svg class="icon"><use href="#i-arrow"></use></svg></a>
+</div>
+</div>
+</section>
+<section aria-labelledby="contact-bottom-title" class="contact-bottom-cta">
+<div class="container contact-bottom-cta__inner"><div><span class="eyebrow">Austra Security Limited</span><h2 id="contact-bottom-title">Your security requirements deserve a considered approach.</h2><p>Speak with us about your premises, project or event and explore the next steps.</p></div><a class="btn" href="tel:+447867842357">Call Our Team <svg class="icon"><use href="#i-arrow"></use></svg></a></div>
+</section></main>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a aria-label="Austra Security Limited home" class="brand" href="index.html"><img alt="Austra Security Limited logo" class="brand__logo" decoding="async" src="logo.png"/></a>
+<p>Professional security solutions shaped around your people, premises and operational requirements.</p>
+<div class="footer-contact">
+<a href="tel:+447867842357"><svg class="icon"><use href="#i-phone"></use></svg>+44 7867 842357</a>
+<a href="mailto:info@austrasecurity.co.uk"><svg class="icon"><use href="#i-mail"></use></svg>info@austrasecurity.co.uk</a>
+<span><svg class="icon"><use href="#i-pin"></use></svg>Offices in London and Coventry</span>
+<span><svg class="icon"><use href="#i-building"></use></svg>Coventry: 261 Burnaby Road, Coventry, CV6 4AU</span>
+</div>
+</div>
+<div class="footer-col"><h3>Explore</h3><a href="index.html">Home</a><a href="about.html">About Us</a><a href="service.html">Our Services</a><a href="careers.html">Careers</a><a aria-current="page" href="#contact-form">Contact</a></div>
+<div class="footer-col"><h3>Contact</h3><a href="#contact-form">Send an Enquiry</a><a href="tel:+447867842357">Call +44 7867 842357</a><a href="mailto:info@austrasecurity.co.uk">Email Austra Security</a><a href="careers.html">Career Enquiries</a></div>
+<div class="footer-col"><h3>Our Locations</h3><a href="index.html#offices">London, United Kingdom</a><a href="index.html#offices">Coventry, United Kingdom</a><a href="contact.html">Contact the Company</a></div>
+</div>
+<div class="footer-bottom"><span>© <span id="currentYear">2026</span> Austra Security Limited. All rights reserved.</span><span>Career opportunities are subject to vacancies and recruitment requirements.</span><span class="footer-legal"><a href="index.html#privacy-note">Privacy</a><a href="index.html#privacy-note">Cookies</a><a href="index.html#company-details">Company Details</a></span></div>
+</div>
+<div aria-hidden="true" class="footer-ghost">AUSTRA</div>
+</footer>
+<script>
+    (() => {
+      'use strict';
+      const header = document.getElementById('siteHeader');
+      const menuToggle = document.getElementById('menuToggle');
+      const mainNav = document.getElementById('mainNav');
+      const menuClose = document.getElementById('menuClose');
+      const menuBackdrop = document.getElementById('menuBackdrop');
+      const iconMarkup = (name) => `<svg class="icon" aria-hidden="true"><use href="#i-${name}"></use></svg>`;
+
+      const syncHeader = () => {
+        if (header) header.classList.toggle('is-scrolled', window.scrollY > 24);
+      };
+      syncHeader();
+      window.addEventListener('scroll', syncHeader, { passive: true });
+
+      function setMenuOpen(open, returnFocus = false) {
+        if (!mainNav || !menuBackdrop || !menuToggle) return;
+        mainNav.classList.toggle('is-open', open);
+        menuBackdrop.classList.toggle('is-open', open);
+        document.body.classList.toggle('menu-open', open);
+        menuToggle.setAttribute('aria-expanded', String(open));
+        menuToggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+        menuToggle.innerHTML = iconMarkup(open ? 'close' : 'menu');
+        if (open && menuClose) menuClose.focus();
+        else if (returnFocus) menuToggle.focus();
+      }
+
+      if (menuToggle && mainNav && menuBackdrop) {
+        menuToggle.addEventListener('click', () => setMenuOpen(!mainNav.classList.contains('is-open')));
+        if (menuClose) menuClose.addEventListener('click', () => setMenuOpen(false, true));
+        menuBackdrop.addEventListener('click', () => setMenuOpen(false, true));
+        mainNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenuOpen(false)));
+        document.addEventListener('keydown', event => {
+          if (event.key === 'Escape' && mainNav.classList.contains('is-open')) setMenuOpen(false, true);
+        });
+        window.addEventListener('resize', () => {
+          if (window.innerWidth > 780 && mainNav.classList.contains('is-open')) setMenuOpen(false);
+        });
+      }
+
+      const year = document.getElementById('currentYear');
+      if (year) year.textContent = String(new Date().getFullYear());
+
+
+      const enquiryForm = document.getElementById('enquiryForm');
+      const formStatus = document.getElementById('formStatus');
+      if (enquiryForm) {
+        enquiryForm.addEventListener('submit', event => {
+          event.preventDefault();
+          if (!enquiryForm.reportValidity()) return;
+          const data = new FormData(enquiryForm);
+          const fields = [
+            ['Full name', data.get('fullName')],
+            ['Email address', data.get('email')],
+            ['Telephone number', data.get('phone') || 'Not provided'],
+            ['Service required', data.get('service')],
+            ['Preferred location', data.get('location')],
+            ['Enquiry details', data.get('message')]
+          ];
+          const body = 'Hello Austra Security Limited,\n\nI would like to make a security enquiry.\n\n' +
+            fields.map(([label, value]) => `${label}:\n${value}`).join('\n\n') +
+            '\n\nKind regards,\n' + data.get('fullName');
+          const subject = 'Website Enquiry - Austra Security Limited';
+          const mailto = 'mailto:info@austrasecurity.co.uk?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+          formStatus.textContent = 'Your email app should open with the enquiry prepared. Review it and press Send to contact Austra Security Limited.';
+          formStatus.classList.remove('is-error');
+          formStatus.classList.add('is-success');
+          window.location.href = mailto;
+        });
+      }
+
+      const revealItems = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -35px 0px' });
+        revealItems.forEach(item => observer.observe(item));
+      } else {
+        revealItems.forEach(item => item.classList.add('is-visible'));
+      }
+    })();
+  </script>
+</body>
+</html>
